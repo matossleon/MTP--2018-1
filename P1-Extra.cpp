@@ -1,62 +1,35 @@
-[Project]
-FileName=P1-Extra.cpp
-Name=Project1
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=1
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=1
+#include <stdio.h>
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
-
-[Unit1]
-FileName=P1-Extra.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
+int main()
+{
+    int e = 0, i = 0;
+    char bin[256];
+    printf("Digite um numero em binario: ");
+    scanf("%s", &bin);     	
+while(bin[i] != '\0')
+    {
+        if(bin[i] == '0')
+        {
+            if(e == 0);
+            else if(e == 1) e = 2;
+            else if(e == 2) e = 1;
+            i++;
+        }
+        else if(bin[i] == '1')
+        {
+            if(e == 0) e = 1;
+            else if(e == 1) e = 0;
+            else if(e == 2);
+            i++;
+        }
+        else
+        {
+            printf("\nNumero digitado nao e binario");
+            return 0;
+        }
+    }
+    
+    if(e == 0) printf("\n O numero binario %s e multiplo de 3", bin);
+    else printf("\n O numero binario %s nao e multiplo de 3", bin);
+    return 0;
+}
