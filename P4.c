@@ -1,4 +1,4 @@
-//Aluno: Leonardo Matos Silva
+//Aluno: Leonardo Matos
 //Matrícula: 11721EBI021
 
 #include <stdio.h>
@@ -12,11 +12,19 @@ int main()
 	for(i=0, j=0; caracteres[j]; i++, j++)
 	{
 		while (!(caracteres[j] >='0' && caracteres[j] <='9'))
-		j++;
-			numerico[i] = caracteres[j] - '0';
-			cont++;
+		{	j++;	
+		if(!(caracteres[j]))
+		break;
+		}	
+		if(caracteres[j])
+		{	numerico[i] = caracteres[j] - '0';
+			cont++;		}
 	}
-	for(i=0; i<cont; i++)
-	printf("%d", numerico[i]);
+	if (cont>0)
+	{
+		for(i=0; i<cont; i++)
+		printf("%d", numerico[i]);
+	}
+	else printf("0");
 	return 0;
 }
