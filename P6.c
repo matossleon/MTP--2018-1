@@ -1,3 +1,6 @@
+//Aluno: Leonardo Matos Silva
+//Matrícula: 11721EBI021
+
 #include <stdio.h>
 
 int somatorio(int*, int*);
