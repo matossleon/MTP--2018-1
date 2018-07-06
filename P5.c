@@ -1,5 +1,5 @@
 //Aluno: Leonardo Matos Silva
-//Matrícula: 11721EBI021
+//MatrÃ­cula: 11721EBI021
 
 #include <stdio.h>
 int main()
@@ -10,7 +10,7 @@ int main()
 	printf("\n\tVoce deseja...\n\n\t\t1. Codificar\n\t\t2. Decodificar\n\n\n\tOpcao: "); scanf("%d",&k); getchar();
 	switch(k){
 		case 1:{
-			printf("\tDigite uma mensagem de ate 255 caracteres: \n\n\t"); gets(msg);
+			printf("\tDigite uma mensagem de ate 255 caracteres: \n\n\t"); scanf("%s", msg);
 			char *pmsg= msg;
 			printf("\n\tMensagem codificada:\n\t\t");
 			for(i=0;msg[i];i++){

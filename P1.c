@@ -1,5 +1,5 @@
 //Nome: LEONARDO MATOS SILVA
-//Matrícula: 11721EBI021
+//MatrÃ­cula: 11721EBI021
 
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main()
     int e = 0, i = 0;
     char bin[256];
     printf("Digite um numero em binario: ");
-    scanf("%s", &bin);     	
+    scanf("%s", bin);     	
 while(bin[i] != '\0')
     {
         if(bin[i] == '0')

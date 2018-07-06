@@ -1,5 +1,5 @@
 //Aluno: Leonardo Matos Silva
-//Matrícula: 11721EBI021
+//MatrÃ­cula: 11721EBI021
 
 #include <stdio.h>
 
@@ -26,7 +26,7 @@ int main ()
 	p = vetor;	
 	q = vetor+n-1;	
 	i=n;
-    f = float(somatorio(p, q));
+    f = (somatorio(p, q));
 	printf("\n\n\tMedia = %.1f", divisao(i, f));
 	return 0;
 }

@@ -1,5 +1,5 @@
 //Aluno: Leonardo Matos
-//Matrícula: 11721EBI021
+//MatrÃ­cula: 11721EBI021
 #include <stdio.h>
 void mostrar(int v[])
 {
@@ -32,7 +32,8 @@ int main()
 	int b=1;
 	for(b=1;b;b++){
 	do{
-	int i,k,x,y,v[32],w[32],z[32],u,c;
+	int i,k,x,y,v[32],w[32],z[32],u;
+	char c;
 		printf("OPERACAO %d: \n",b);
 		b++;
 	printf("\n\nDigite uma opcao:\n\n");

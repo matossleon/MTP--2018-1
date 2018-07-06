@@ -1,5 +1,5 @@
 //Aluno: LEONARDO MATOS SILVA
-//Matrícula: 11721EBI021
+//MatrÃ­cula: 11721EBI021
 
 #include <stdio.h>
 void charparaint(int n,int v[], char w[])
@@ -52,7 +52,7 @@ int main()
 			char w[256];
 			int i,n, guardan, m, num=0, alfa=0, v[256];
 			getchar();
-			gets(w);
+			scanf("%s", w);
 			n = medir(w) - 1;
 			m = medir(w);
 			guardan= n;
@@ -69,7 +69,7 @@ int main()
 			char w[256];
 			int i,n, guardan, m, num=0, alfa=0, v[256];
 			getchar();
-			gets(w);
+			scanf("%s", w);
 			n = medir(w) - 1;
 			m = medir(w);
 			guardan= n;
